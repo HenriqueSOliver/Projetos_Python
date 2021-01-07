@@ -1,0 +1,8 @@
+print("====== DESAFIO 04 ======")
+n = input('Digite algo:')
+print(f"O valor digitado é um tipo primitivo {type(n)}")
+print(f"É um valor alfanumérico? {n.isalnum()}")
+print(f"É uma letra? {n.isalpha()}")
+print(f"É um tipo numérico? {n.isnumeric()}")
+print(f"É um letra maiúscula? {n.isupper()}")
+print(f"É minuscula? {n.islower()}")
