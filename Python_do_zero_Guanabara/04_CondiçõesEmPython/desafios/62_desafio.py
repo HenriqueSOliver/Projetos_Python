@@ -8,11 +8,14 @@ t = int(input('Primeiro termo: ')) #termo
 r = int(input('Razão: ')) #razão vai pular de quantos em quantos
 tf = t
 c = 1
-while r != 0:
-    while c <= 10:
+total = 0
+mais = 10
+while mais != 0:
+    total = total + mais
+    while c <= total:
         print(f'{tf}', end=' -> ')
         tf += r
         c += 1
     print('PAUSA')
-    r = int(input('Quantos termos você quer mostrar a mais? '))
-print('ACABOU')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print(f'PROGRESSÃO FINALIZADA COM TANTOS {total} TERMOS MOSTRADOS')
