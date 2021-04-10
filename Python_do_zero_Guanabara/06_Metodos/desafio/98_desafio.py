@@ -4,6 +4,11 @@ def cont1(i, f, p):
     print('~'*30)
     print(f'Contagem de {i} até {f} de {p} em {p}')
 
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p = 1
+
     if i < f:
         cont = i
         while cont <= f:
@@ -21,9 +26,14 @@ def cont1(i, f, p):
 
 
 
-
-
-
 #programa principal
 cont1(1, 10, 1)
 cont1(10, 0, 2)
+print('~'*30)
+
+print('Agora é a sua vez de fazer a contagem personalizada')
+
+ini = int(input('Início: '))
+fim = int(input('Fim: '))
+pas = int(input('Passo: '))
+cont1(ini, fim, pas)
