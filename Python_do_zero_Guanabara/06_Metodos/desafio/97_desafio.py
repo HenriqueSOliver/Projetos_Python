@@ -1,7 +1,8 @@
 def tit(txt):
-    print('~'*30)
+    tam = len(txt) + 4 # o tamanho será formatado de acordo com o tamanho do texto impresso
+    print('~' * tam)
     print(txt)
-    print('~'*30)
+    print('~' * tam)
 
 
 #Programa principal
