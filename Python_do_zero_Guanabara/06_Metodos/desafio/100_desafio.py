@@ -10,10 +10,18 @@ def sortLista(lista):
         sleep(0.5)
     print('PRONTO')
         
+def somaP(lista):
+    soma = 0
+    for valor in lista:
+        if valor % 2 == 0:
+            soma += valor
+    print(f'Somando os valores pares de {lista}, temos {soma}')
+
 
 
 #programa principal
 
 números = []
 sortLista(números)
+somaP(números)
 
